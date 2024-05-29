@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <servlet>
+        <servlet-name>PeliculaServlet</servlet-name>
+        <servlet-class>org.example.lab6_2021104.servlets.PeliculaServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PeliculaServlet</servlet-name>
+        <url-pattern>/PeliculaServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DetallesServlet</servlet-name>
+        <servlet-class>org.example.lab6_2021104.servlets.DetallesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DetallesServlet</servlet-name>
+        <url-pattern>/detallesServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
